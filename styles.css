@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  height: 100vh;
+}
+
+button {
+  width: fit-content;
+  font-size: 3rem;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  background-color: rgb(175, 114, 233);
+  color: white;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+button:first-child {
+  opacity: 75%;
+  transition: opacity 1s;
+}
+
+button:last-child {
+  transition-property: background-color, color;
+  transition-duration: 1s;
+}
+
+button:first-child:hover {
+  opacity: 100%;
+}
+
+button:first-child:focus {
+  opacity: 0%;
+}
+
+button:last-child:focus {
+  color: #333;
+  background-color: orange;
+  transition: 1s;
+}
